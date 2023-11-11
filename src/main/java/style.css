@@ -7,7 +7,7 @@
 
 #hero{
     height: 800px;
-    background-image: url("../resources/img/lights.jpg");
+    background-image: url("../resources/img/christmas.jpeg");
     /*원본사이즈로 보이게 설정*/
     background-position: center;
     background-size: cover;
@@ -23,7 +23,6 @@
     margin: 0 auto;
     position: relative;
     top: 200px;
-    font-family: 'GmarketSansMedium', sans-serif;
 }
 
 #hero-content h1{
@@ -31,6 +30,7 @@
     font-size: 50px;
     margin: 0;
     font-weight: 900;
+    font-family: 'LOTTERIADDAG', sans-serif;
 }
 
 #hero-content p{
@@ -51,4 +51,36 @@
 
 #hero-content a:hover{
     background-color: gold;
+}
+
+.destination{
+    margin: 0 20px;
+}
+
+.destination p{
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+#destinations{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center
+}
+
+.destination img{
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 4px 8px black;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#highlights h2{
+    text-align: center;
+    font-size: 45px;
+
 }
