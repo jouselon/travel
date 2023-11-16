@@ -7,7 +7,7 @@
 
 #hero{
     height: 800px;
-    background-image: url("../resources/img/christmas.jpeg");
+    background-image: url("../resources/img/main.gif");
     /*원본사이즈로 보이게 설정*/
     background-position: center;
     background-size: cover;
@@ -30,7 +30,7 @@
     font-size: 50px;
     margin: 0;
     font-weight: 900;
-    font-family: 'LOTTERIADDAG', sans-serif;
+    font-family: 'Harry Potter', sans-serif;
 }
 
 #hero-content p{
@@ -61,6 +61,7 @@
     text-align: center;
     font-size: 28px;
     margin: 20px 0;
+    color: #FFC627;
 }
 
 #destinations{
@@ -81,10 +82,11 @@
 
 #highlights{
     padding: 24px;
-    background: linear-gradient(45deg, #ff6e7f, #bfe9ff) ;
+    background: linear-gradient(180deg, #000000, #2e2e2e) ;
 }
 
 #highlights h2{
     text-align: center;
     font-size: 45px;
+    color: whitesmoke;
 }
