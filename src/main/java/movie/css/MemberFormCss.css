@@ -1,0 +1,139 @@
+@charset "EUC-KR";
+
+
+	*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  display: flex; /* 요소들을 가로로 나열하도록 설정 */
+  flex-direction: column; /* 세로 방향으로 나열하도록 설정 */
+  justify-content: center; /* 세로 방향으로 가운데 정렬 */
+  align-items: center; /* 가로 방향으로 가운데 정렬 */
+  text-align: center;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1{
+  color: black;
+}
+
+#joinform {
+  position: relative;
+  width:400px;
+  height:400px;
+  padding: 30px, 20px;
+  background-color: whitesmoke; 
+  text-align:center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+
+
+
+.textForm {
+  border-bottom: 2px solid white;
+  margin: 30px;
+  padding: 10px 10px;
+  width: 400px;
+  background: #eee;
+  border-radius: 20px;  
+}
+
+
+.id {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: dimgray;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.pw {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: dimgray;
+  font-size:16px;
+  height:25px;
+  background: none;
+  font-weight: bolder;
+}
+
+.name {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: dimgray;
+  font-size:16px;
+  height:25px;
+  background: none;
+  font-weight: bolder;
+}
+
+.email {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: dimgray;
+  font-size:16px;
+  height:25px;
+  background: none;
+  font-weight: bolder;
+}
+.textForm input[type="text"] {
+  border: none;
+  outline: none;
+  color: dimgray;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+  font-weight: bolder;
+}
+
+.nickname {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: dimgray;
+  font-size:16px;
+  height:25px;
+  background: none;
+  font-weight: bolder;
+}
+
+
+.btn {
+
+	width:400px;
+	border-radius: 20px;
+	height:45px;
+	background-size: 200%;
+	color: white;
+	font-weight: bold;
+	border:none;
+	cursor:pointer;
+  transition: 0.5s;
+   background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+.login-from-background{
+  background: white;
+  box-shadow: 0px 0px 30px 0px rgb(165, 165, 165); 
+  border-radius: 20px;
+  height: 600px;
+  padding: 30px;
+}

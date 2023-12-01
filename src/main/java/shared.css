@@ -86,7 +86,9 @@ header a:hover {
 }
 
 footer{
+    margin-top: 30px;
     background: linear-gradient(70deg, rgb(24,24,24),rgb(25, 29, 29));
+
 }
 
 footer li{

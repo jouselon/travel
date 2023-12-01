@@ -1,0 +1,113 @@
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>평점</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/rate.css">
+    <script>
+      const cardContainer = document.querySelector('.card-container'); // 카드 컨테이너 선택
+
+      cardContainer.addEventListener('click', function (event) {
+        const target = event.target;
+
+        // 자세히 버튼 클릭 시 별점 선택 영역 표시
+        if (target.classList.contains('detail-btn')) {
+          const ratingStars = target.parentNode.querySelector('.rating-stars');
+          ratingStars.style.display = 'block';
+        }
+      });
+    </script>
+    
+  </head>
+  <body>
+    <div class="container container-1">
+      <div class="poster">
+        <img src="images/flash.jpg" alt="" />
+      </div>
+      
+      <div class="info">
+        <div class="movie-title">플래시</div>
+        <div class="movie-detail">
+          <div class="set">
+            <label>개봉일</label>
+            <span>2023년 6월 4일</span>
+          </div>
+          <div class="set">
+            <label>상영시간</label>
+            <span>1시간 47분</span>
+          </div>
+          <div class="set">
+            <label>장르</label>
+            <span>액션</span>
+          </div>
+          <div class="set">
+            <label>평점</label>
+            <form name="myform" id="myform" method="post" action="./save">
+              <fieldset>
+                <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐&nbsp;&nbsp;</label>
+                <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐&nbsp;&nbsp;</label>
+                <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">⭐&nbsp;&nbsp;</label>
+                <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐&nbsp;&nbsp;</label>
+                <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="movie-description">
+          시공간이 붕괴된 세계, 차원이 다른 히어로가 온다! 빛보다 빠른 스피드, 물체 투과, 전기 방출, 자체 회복, 천재적인 두뇌까지
+          갓벽한 능력을 자랑하지만 존재감은 제로, 저스티스 리그에서 궂은일을 도맡아 하는 히어로 '플래시'. 어느 날 자신에게 빛보다 빠른
+          속도로 달리면 시공간 이동 능력이 있음을 알게 된 그는 '브루스 웨인'의 만류를 무시한 채 끔찍한 상처로 얼룩진 과거를 바꾸기
+          위해 시간을 역행한다. 의도치 않은 장소에 불시착한 '플래시'는 멀티버스 세상 속 또 다른 자신과 맞닥뜨리고 메타 휴먼이
+          흔적도 없이 사라지고 모든 것이 뒤엉킨 세상과 마주하게 된다. '플래시'는 자신이 알던 모습과 전혀 달라진 나이 들고 은퇴한
+          '배트맨'과 크립톤 행성에서 온 '슈퍼걸'의 도움으로 외계의 침공으로부터 시간과 차원이 붕괴된 지구를 구하려 나서는데...
+        </div>
+        <div class="movie-director">
+          <div class="director-header">감독</div>
+          <div class="director-list">
+            <div class="director">
+              <img src="images/andreas.jpg" alt="" />
+              <label>안드레스<br>무시에티</label>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="movie-cast">
+          <div class="header">출연진</div>
+          <div class="list">
+            <div class="cast">
+              <img src="images/miller.jpg" alt="" />
+              <label>에즈라 밀러</label>
+            </div>
+            <div class="cast">
+              <img src="images/마이클.jpg" alt="" />
+              <label>마이클</label>
+            </div>
+            <div class="cast">
+              <img src="images/sha.jpg" alt="" />
+              <label>사샤 카예</label>
+            </div>
+            <div class="cast">
+              <img src="images/ben.jpg" alt="" />
+              <label>벤 애플렉</label>
+            </div>
+            <div class="cast">
+              <img src="images/Kiersey.jpg" alt="" />
+              <label>키어지 클레먼스</label>
+            </div>
+            <div class="cast">
+              <img src="images/shanon.jpg" alt="" />
+              <label>마이클 섀넌</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+

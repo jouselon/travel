@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'SUIT-Regular';
+  background-color: #FFFFFF;
+  min-height: 100vh; /* 최소 높이를 뷰포트 */
+  display: flex; /* 내용을 수평 및 수직으로 가운데 정렬  */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-1 {
+  font-family: 'SUIT-Regular';
+  min-height: 100vh;
+  display: grid; /* 그리드 레이아웃을 생성 */
+  
+  grid-template-columns: 480px 1fr; 
+  /*속성은 480px와 나머지 영역으로 구성된 두 개의 열을 생성합니다.  */
+  
+  grid-gap: 32px;
+  /*열 사이 간격을 설정  */
+  
+  backdrop-filter: blur(12px) contrast(80%);
+  /*  속성은 배경을 흐리게 만들고 대비를 80%로 설정  */
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    
+  color: black;
+  border-radius: 30px;
+  background-color: white;
+  
+  position: relative;
+}
+
+.info {
+  padding-top: 24px;
+  padding-left: 24px;
+  font-family: 'SUIT-Regular';
+}
+
+.poster {
+  width: 100%;
+  height: 100vh;
+  
+  
+  /* 수평 및 수직으로 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 수평 및 수직으로 가운데 정렬 */
+}
+
+.poster img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 1.5s ease-in-out;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.info > div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+.movie-title {
+  font-size: 64px;
+  font-weight: bold;
+  background-image: linear-gradient(40deg, #ffe000, #c31432);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-detail .set {
+  display: inline-block;
+  margin-right: 64px;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-detail label {
+  font-size: 14px;
+  color: black;
+  display: block;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-detail span {
+  font-size: 22px;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-description {
+  line-height: 24px;
+}
+
+.movie-director {
+  font-family: 'SUIT-Regular';
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.movie-cast .header {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-director .list {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  grid-gap: 32px;
+}
+
+.movie-director .director {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  font-family: 'SUIT-Regular';
+}
+
+.movie-director img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+}
+
+.movie-director label {
+  font-family: 'SUIT-Regular';
+  margin-top: 8px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.movie-cast .header {
+  font-family: 'SUIT-Regular';
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.movie-cast .list {
+  font-family: 'SUIT-Regular';
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  grid-gap: 32px;
+}
+
+.movie-cast .cast {
+  font-family: 'SUIT-Regular';
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-cast img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+}
+
+.movie-cast label {
+  font-family: 'SUIT-Regular';
+  margin-top: 8px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+#myform {
+  text-align: center; /* 내부 요소들 가운데 정렬 */
+}
+
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    border: 0; /* 필드셋 테두리 제거 */
+}
+#myform input[type=radio]{
+    display: none; /* 라디오박스 감춤 */
+}
+#myform label{
+    font-size: 2.5em; /* 이모지 크기 */
+    color: transparent; /* 기존 이모지 컬러 제거 */
+    text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+    
+  display: inline-block; /* 별표를 가로로 정렬 */
+  vertical-align: middle; /* 중앙 정렬을 위해 필요 */
+   margin-right: -25px; /* 별표 사이의 우측 간격 설정 */
+}
+#myform label:hover{
+    text-shadow: 0 0 0 #FFBF00; /* 마우스 호버 */
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 #FFBF00; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    direction: rtl; /* 이모지 순서 반전 */
+    border: 0; /* 필드셋 테두리 제거 */
+}
+#myform fieldset legend{
+    text-align: left;
+}
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 #FFBF00; /* 마우스 클릭 체크 */
+}
+
+
+
+
+
+<!-- 댓글 -->
+
+.container-2 {
+  position: relative;
+  width: 100%;
+  height: 50px; /* Updated height value */
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  background-color: blue;
+}

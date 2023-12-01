@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+<title>포폴 인트로</title>
+<style>
+
+    *{margin: 0; padding: 0;}
+    body{overflow: hidden;}
+
+    html{
+        background: url("img/image.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        background-blend-mode: multiply;
+        font-size: 10px;
+        }
+
+
+    div{                
+        margin-top: 100px;
+        padding:200px 100px;
+        color: white;
+        font-size: 3vw;
+        overflow: hidden;
+        width: 1500px;
+        height: 300px;
+        }
+
+    html::before{
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #000;
+    }
+
+    .bg{
+    color: #fff;
+    text-align: left;     
+    position: relative;
+    }
+
+
+    .w-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+    }
+    .w-outline {
+    border: 3px solid aliceblue;
+    color: navy;
+    }
+
+    .outline {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    
+    transition: 0.25s;
+}
+    
+    .outline:hover {
+    letter-spacing: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+</style>
+    </head>
+    <body>
+        <div class="bg">
+            <h1>영화 감상평과 예고편<br>그리고 예매를 모두 한번에!</h1>
+             <button class="outline w-outline" type="button"><a href="index.html">입장하기</a></button>
+        </div>
+    </body>
+</html>
