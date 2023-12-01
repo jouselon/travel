@@ -62,7 +62,6 @@ input[type="number"] {
     border: 2px solid #adaeae;
     border-radius: 0.3em;
     outline: none;
-    appearance: text-field;
     -moz-appearance: textfield;
 }
 input[type="number"]::-webkit-outer-spin-button,

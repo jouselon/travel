@@ -47,9 +47,7 @@
     let hours = Math.floor((diff / 1000 / 60 / 60) % 24);
     let days = Math.floor(diff / 1000 / 60 / 60 / 24);
 
-    let outStr = `새해는...<br> ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남았습니다!`;
-
-    document.getElementById('remaining').innerHTML = outStr;
+    document.getElementById('remaining').innerHTML = `새해는...<br> ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남았습니다!`;
 
     setTimeout(whenNewYear, 1000);
   }

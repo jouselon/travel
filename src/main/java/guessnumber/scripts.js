@@ -16,7 +16,7 @@ const play = () => {
     }
     guessedNumsArr.push(userGuess);
     noOfGuesses += 1;
-    if (userGuess != answer) {
+    if (userGuess !== answer) {
         if (userGuess < answer) {
             hint.innerHTML = "너무 낮아요! 다시 시도해 보세요.";
         } else {
