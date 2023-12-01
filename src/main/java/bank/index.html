@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="container">
+
+    <!--왼쪽 메뉴 시작-->
+      <aside>
+        <div class="top">
+
+          <!--로고-->
+          <div class="logo">
+            <h2><span>클로바</span>뱅크</h2>
+          </div>
+
+          <!--닫기-->
+          <div class="close">
+            <span class="material-symbols-outlined">close</span>
+          </div>
+        </div>
+
+        <!--사이드 메뉴-->
+        <div class="sidebar">
+            <!--홈으로-->
+            <a href="#">
+              <span class="material-symbols-outlined">home</span>
+              <h3>홈</h3>
+            </a>
+              <!--공지사항-->
+           <a href="#">
+             <span class="material-symbols-outlined">campaign</span>
+             <h3>공지사항</h3>
+           </a>
+            <!--신용점수-->
+          <a href="#">
+            <span class="material-symbols-outlined">avg_pace</span>
+            <h3>신용점수</h3>
+          </a>
+            <!--내 계좌-->
+          <a href="#">
+            <span class="material-symbols-outlined">savings</span>
+            <h3>내 계좌</h3>
+          </a>
+            <!--카드-->
+          <a href="#">
+            <span class="material-symbols-outlined">credit_card</span>
+            <h3>카드 목록</h3>
+          </a>
+              <!--주식-->
+          <a href="#">
+            <span class="material-symbols-outlined">show_chart</span>
+            <h3>주식</h3>
+          </a>
+            <!--계정-->
+          <a href="#">
+            <span class="material-symbols-outlined">person</span>
+            <h3>계정</h3>
+          </a>
+            <!--고객센터-->
+          <a href="#">
+            <span class="material-symbols-outlined">support_agent</span>
+            <h3>고객센터</h3>
+          </a>
+            <!--로그아웃-->
+          <a href="#">
+            <span class="material-symbols-outlined">logout</span>
+            <h3>로그아웃</h3>
+          </a>
+        </div>
+      </aside>
+    <!--왼쪽 메뉴 끝-->
+
+    <!--******************************************-->
+
+    <!--메인 시작-->
+    <main>
+      <h1>대시보드</h1>
+      <!--날짜-->
+      <div class="date">
+        <label>
+          <input type="date">
+        </label>
+      </div>
+      <!--윗메뉴-->
+      <div class="insights">
+        <!--시작-->
+        <div class="sales">
+          <span class="material-symbols-outlined">payments</span>
+          <div class="middle">
+            <div class="left">
+              <h3>내 자산</h3>
+              <h1>24,128,720원</h1>
+            </div>
+          </div>
+          <small>현재</small>
+        </div>
+        <!--끝-->
+
+        <!--시작-->
+        <div class="expensive">
+          <span class="material-symbols-outlined">star</span>
+          <div class="middle">
+            <div class="left">
+              <h3>신용등급</h3>
+              <h1>KCB 951점 | NICE 916점</h1>
+            </div>
+          </div>
+          <small>현재</small>
+        </div>
+        <!--끝-->
+
+        <!--시작-->
+        <div class="expensive">
+          <span class="material-symbols-outlined">credit_card</span>
+          <div class="middle">
+            <div class="left">
+              <h3>총 이용금액</h3>
+              <h1>2,604,100원</h1>
+            </div>
+          </div>
+          <small>현재</small>
+        </div>
+        <!--끝-->
+      </div>
+      <!--메인 왼쪽 끝-->
+
+      <!--최근 구매 내역-->
+      <div class="recent_order">
+        <h1>내 계좌</h1>
+        <table>
+          <thead>
+          <tr>
+            <th>은행</th>
+            <th>통장명</th>
+            <th>재산</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>카카오뱅크</td>
+            <td>입출금통장</td>
+            <td>1,526원</td>
+            <td class="primary">자세히</td>
+          </tr>
+
+          <tr>
+            <td>국민은행</td>
+            <td>KB마이핏은행</td>
+            <td>100,060원</td>
+            <td class="primary">자세히</td>
+          </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="monthly_fee">
+        <h1>매달 나가는 돈</h1>
+        <table>
+          <thead>
+          <tr>
+            <th> </th>
+            <th>분야</th>
+            <th>날짜</th>
+            <th>금액</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><img src="images/netflix.png" alt=""></td>
+            <td>넷플릭스</td>
+            <td>11월 26일</td>
+            <td>12,500원</td>
+          </tr>
+          <tr>
+            <td><img src="images/disneyplus.png" alt=""></td>
+            <td><img src="" alt="">디즈니 플러스</td>
+            <td>11월 30일</td>
+            <td>9,900원</td>
+          </tr>
+          <tr>
+            <td><img src="images/kt.png" alt=""></td>
+            <td><img src="" alt="">KT통신</td>
+            <td>26,500원</td>
+            <td>11월 30일</td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+
+    <!--오른쪽 요소 시작-->
+    <div class="right_background">
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-symbols-outlined active">light_mode</span>
+          <span class="material-symbols-outlined">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+              <small class="text-muted"></small>
+          </div>
+          <div class="profile-photo">
+            <img src="../resources/images/profile.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <!--오른쪽 요소 끝-->
+
+      <!--입출금 시작-->
+      <div class="recent_updates">
+        <h2>최근 내역</h2>
+        <div class="updates">
+          <div class="card-photo">
+            <img src="../resources/images/master.png" alt="">
+          </div>
+          <div class="message">
+            <p>11.30 | 환급</p>
+            <p>-<b>26,000원</b></p>
+          </div>
+        </div>
+
+        <div class="updates">
+          <div class="card-photo">
+            <img src="../resources/images/master.png" alt="">
+          </div>
+          <div class="message">
+            <p>11.25 | 월급</p>
+            <p>+<b>3,226,000원</b></p>
+          </div>
+        </div>
+
+        <div class="spend_money">
+          <h2>내 소비 분석</h2>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">restaurant</span>
+            </div>
+            <div class="message">
+              <p>음식</p>
+              <b>987,720원</b>
+            </div>
+          </div>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">shopping_bag</span>
+            </div>
+            <div class="message">
+              <p>쇼핑</p>
+              <b>287,720원</b>
+            </div>
+          </div>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">coffee</span>
+            </div>
+            <div class="message">
+              <p>카페</p>
+              <b>687,720원</b>
+            </div>
+          </div>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">local_convenience_store</span>
+            </div>
+            <div class="message">
+              <p>편의점</p>
+              <b>87,720원</b>
+            </div>
+          </div>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">health_and_beauty</span>
+            </div>
+            <div class="message">
+              <p>뷰티</p>
+              <b>434,720원</b>
+            </div>
+          </div>
+
+          <div class="updates">
+            <div class="card-photo">
+              <span class="material-symbols-outlined">more_horiz</span>
+            </div>
+            <div class="message">
+              <p>기타</p>
+              <b>31,320원</b>
+            </div>
+          </div>
+
+      </div>
+      </div>
+<!--최근 변동 끝 -->
+
+
+    </div>
+
+
+  </div>
+  </div>
+</body>
+</html>

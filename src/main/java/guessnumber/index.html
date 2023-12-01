@@ -1,0 +1,33 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>숫자 맞추기 게임</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <header>
+        <h1>🤔<span>숫자 맞추기</span></h1>
+    </header>
+    <div class="container">
+        <div id="game">
+            <h3>
+                1~100사이의 숫자를 골라보세요!
+            </h3>
+            <div class="input-wrapper">
+                <input type="number" placeholder="00" id="guess" />
+                <button id="check-btn">맞추기</button>
+            </div>
+            <p id="no-of-guesses">예상한 횟수 : </p>
+            <p id="guessed-nums">내 예상 숫자 : </p>
+        </div>
+        <button id="restart">다시하기</button>
+        <div class="result">
+            <div id="hint"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    </body>
+    </html>

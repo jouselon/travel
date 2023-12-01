@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>개천절</title>
+    <style>
+        body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/42IA/image/6qmunQI87Drds1cEXocQiBnXqA0.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            display: block;
+            box-sizing: border-box;
+            width: 400px;
+            border-radius: 30px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            position: relative; /* 오버레이가 이 요소에 상대적으로 위치하도록 설정 */
+            z-index: 1; /* 오버레이가 배경보다 위에 나타나도록 설정 */
+        }
+
+    </style>
+</head>
+<body>
+
+<h2 id="remaining"></h2>
+
+<script>
+    function whenGaechunjul() {
+        let now = new Date();
+        let gaechun = new Date(now.getFullYear() + 1, 9, 3);
+
+        let diff = gaechun - now;
+        let seconds = Math.floor((diff / 1000) % 60);
+        let minutes = Math.floor((diff / 1000 / 60) % 60);
+        let hours = Math.floor((diff / 1000 / 60 / 60) % 24);
+        let days = Math.floor(diff / 1000 / 60 / 60 / 24);
+
+        let outStr = `개천절은...<br> ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남았습니다!`;
+
+        document.getElementById('remaining').innerHTML = outStr;
+
+        setTimeout(whenGaechunjul, 1000);
+    }
+
+    whenGaechunjul();
+</script>
+</body>
+</html>

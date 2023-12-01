@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'EF_jejudoldam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'CWDangamAsac-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
     font-weight: normal;
@@ -51,7 +58,7 @@ header {
 
 #page-logo a {
     padding: 10px;
-    font-family: "Harry Potter", sans-serif;
+    font-family: "EF_jejudoldam", sans-serif;
     color: #FFC627;
     font-size: 50px;
     text-decoration: none;

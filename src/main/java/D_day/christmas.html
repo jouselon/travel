@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>크리스마스</title>
+  <style>
+    body {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("https://i.natgeofe.com/k/dfc7bec2-0657-4887-81a7-6d024a8c3f70/WH-XmasTree_4x3.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    h2 {
+      display: block;
+      box-sizing: border-box;
+      width: 400px;
+      border-radius: 30px;
+      border: 2px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      color: black;
+      background-color: white;
+      position: relative; /* 오버레이가 이 요소에 상대적으로 위치하도록 설정 */
+      z-index: 1; /* 오버레이가 배경보다 위에 나타나도록 설정 */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://www.animationsoftware7.com/img/agifs/snow02.gif"); /* 실제 오버레이 이미지의 경로로 변경 */
+      background-size: cover;
+      background-position: center;
+      z-index: 0; /* 오버레이가 콘텐츠보다 아래에 나타나도록 설정 */
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<h2 id="remaining"></h2>
+
+<script>
+  function whenChristmas() {
+    let now = new Date();
+    let christmas = new Date(now.getFullYear(), 11, 25);
+
+    let diff = christmas - now;
+    let seconds = Math.floor((diff / 1000) % 60);
+    let minutes = Math.floor((diff / 1000 / 60) % 60);
+    let hours = Math.floor((diff / 1000 / 60 / 60) % 24);
+    let days = Math.floor(diff / 1000 / 60 / 60 / 24);
+
+    let outStr = `크리스마스는...<br> ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남았습니다!`;
+
+    document.getElementById('remaining').innerHTML = outStr;
+
+    setTimeout(whenChristmas, 1000);
+  }
+
+  whenChristmas();
+</script>
+</body>
+</html>
